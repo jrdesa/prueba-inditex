@@ -6,3 +6,7 @@ Sólo está el método get en el controller.
 ```
 No todos los tests están completos, pero si se revisa el comportamiento en los casos definidos.
 ![image](https://github.com/user-attachments/assets/daf17c72-a8c8-4a75-828f-79c5963ded24)
+
+De cara a la gestión de los errores, he prreferido aprovechar la potencia de controller advice, para retornar la explicación de lo que ha provocado el error, aunque soy muy consciente de que en un entorno de producción es una brecha de seguridad, y el mensaje genérico para un usuario sería: "Contacte con el servicio tecnico" o algo parecido. E internamente, hacerle llegar a la aplicación de auditoría interna, el mensaje o la traza del error.
+![image](https://github.com/user-attachments/assets/dcf017dd-e02e-4644-8e55-ed7c73850723)
+![image](https://github.com/user-attachments/assets/c6dcb5e8-3777-48d8-a465-d25cb6b3c9c9)
